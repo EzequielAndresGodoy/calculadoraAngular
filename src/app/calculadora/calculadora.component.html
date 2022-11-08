@@ -1,0 +1,71 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col my-5 d-flex justify-content-center">
+      <h1 class="text-dark">Calculadora</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <input class="form-control" type="number" name="numero1" id="numero1" [(ngModel)]="numero1">
+    </div>
+    <div class="col-6">
+      <input class="form-control" type="number" name="numero2" id="numero2" [(ngModel)]="numero2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col my-3 d-flex justify-content-center">
+      <input class="btn btn-outline-primary" type="button" value="+" (click)="operar($event)">
+      <input class="btn btn-outline-primary" type="button" value="-" (click)="operar($event)">
+      <input class="btn btn-outline-primary" type="button" value="/" (click)="operar($event)">
+      <input class="btn btn-outline-primary" type="button" value="*" (click)="operar($event)">      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="row">
+        <div class="col">
+          <h5>Primer numero ingresado</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="h2">{{numero1}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="row">
+        <div class="col">
+          <h5>Segundo numero ingresado</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="h2">{{numero2}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-flex align-items-center flex-column">
+      <div class="row">
+        <div class="col">
+          <h5>Resultado</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="h2">{{resultado}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<br>
