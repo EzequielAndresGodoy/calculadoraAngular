@@ -16,7 +16,7 @@ export class CalculadoraComponent implements OnInit {
   }
 
   operar(event: Event){
-
+    console.log(this.numero1)
     let operacion = (<HTMLInputElement>event.target).value
 
     switch (operacion) {
